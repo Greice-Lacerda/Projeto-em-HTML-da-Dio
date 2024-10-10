@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="BR">
+    <head>
+        <title>Formulário com botão select</title> 
+                <style>
+        span{
+            color: red;
+        }
+        .row{
+            margin:5px;
+        }
+        label{
+            width:100px;
+            text-algin: right;
+            display: inline-block;      
+            padding-right:5px
+        }
+        </style>       
+    </head>
+    <body>
+    <form onsubmit="" method="get">
+     <h1>Este é o formulario</h1><br>
+        <label>Nome:</label><input type="text" name="Nome"><br><br>
+        <label>Idade:</label><input type="number" name="Idade"><br><br>                
+        <label>Cargo:</label><select name="role">
+            <option value="Adm">Selecione o cargo:</option>
+            <option selected value="Presidente">Presidente</option>
+            <option value="Vice-presidente">Vice-presidente</option>
+            <option value="Secretária">Secretária</option>
+            <option value="Tesoureiro">Tesoureiro</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Departamento pessoal">Departamento pessoal</option>
+            <option value="Serviços Gerais">Serviços Gerais</option>
+            <option value="Tecnólogo">Tecnólogo</option>
+            </select>
+            <br><br>
+        <label>Senha:</label><input type="password" name="senha"><br><br>
+        <label>Mensagem:</label><textarea name="mensagem" rows="2" cols="50"></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    </body>
+</html>

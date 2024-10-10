@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+        span{
+            color: red;
+        }
+        .row{
+            margin:5px;
+        }
+        label{
+            width:100px;
+            text-algin: right;
+            display: inline-block;      
+            padding-right:5px
+        }
+        option{
+            width:120px;
+            text-algin: right;
+            display: inline-block;      
+            padding-right:5px 
+        }
+        fieldset{
+            margin: 10px 0;
+            border-radius: 15px;
+            border-color: blue;
+            width:350px
+        }
+        </style>
+    </head>
+    <body>
+    <div id="menu-lateral">
+        <div id="links">
+            <fieldset>
+            <legend>Links para contatos:</legend>
+                <ul>
+                <li><a href="#">Link <span>1</span></a></li>
+                <li><a href="#">Link <span>2</span></a></li>
+                <li><a href="#">Link <span>3</span></a></li>
+                </ul>
+            </fieldset>
+        </div>
+        <div id="row">
+                <form onsubmit="" method="get">
+                    <h1>Este é o formulario</h1>
+                    <fieldset>                        
+                    <legend>Dados do cadastro:</legend>
+                        <label>Nome:</label><input type="text" name="Nome"><br><br>
+                        <label>Idade:</label><input type="number" name="Idade"><br><br>
+                        <label>Senha:</label><input type="password" name="senha"><br><br>                
+                        <label>Cargo:</label>
+                            <select name="role">
+                            <option value="Adm">Selecione o cargo:</option>
+                            <option selected value="Presidente">Presidente</option>
+                            <option value="Vice-presidente">Vice-presidente</option>
+                            <option value="Secretária">Secretária</option>
+                            <option value="Tesoureiro">Tesoureiro</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Departamento pessoal">Departamento pessoal</option>
+                            <option value="Serviços Gerais">Serviços Gerais</option>
+                            <option value="Tecnólogo">Tecnólogo</option>
+                            </select>
+                            <br><br>                        
+                        <label>Mensagem:</label><textarea name="mensagem" rows="2" cols="24"></textarea><br><br>
+                    </fieldset>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+        </div>
+    </div>
+    </body>
+</html>
