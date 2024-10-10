@@ -27,8 +27,8 @@
         fieldset{
             margin: 10px 0;
             border-radius: 15px;
-            border-color: blue;
-            width:350px
+            border-color: #00ff00;
+            width:650px
         }
         </style>
     </head>
@@ -36,18 +36,36 @@
     <div id="menu-lateral">
         <div id="links">
             <fieldset>
-            <legend>Links para contatos:</legend>
-                <ul>
-                <li><a href="#">Link <span>1</span></a></li>
-                <li><a href="#">Link <span>2</span></a></li>
-                <li><a href="#">Link <span>3</span></a></li>
-                </ul>
+            <legend>Sites para acesso:</legend>
+            <table>
+                <td>
+                    <video width="200" height="100" controls> 
+                    <source src="https://youtu.be/wS_qbDztgVY">                
+                    </video>
+                </td>
+                <td>
+                    <iframe src="http://dio.me" width="200" height="100"></iframe>
+                </td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235340.31430326385!2d-43.22805892187504!3d-22.8323697863352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99bdee0be5b79f%3A0x19d64acf3bd6a17f!2sItambi%2C%20Itabora%C3%AD%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1728530580648!5m2!1spt-BR!2sbr" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>                
+            </table>                
             </fieldset>
         </div>
         <div id="row">
-                <form onsubmit="" method="get">
-                    <h1>Este é o formulario</h1>
-                    <fieldset>                        
+            <form onsubmit="" method="get">
+                <h1>Formulário de Cadastro:</h1>
+                    <fieldset>
+                        <legend>Links de acesso:</legend>
+                        <td>
+                        <ul>
+                        <li><a href="#">Link <span>1</span></a></li>
+                        <li><a href="#">Link <span>2</span></a></li>
+                        <li><a href="#">Link <span>3</span></a></li>
+                        </ul>
+                        </td> 
+                    </fieldset>
+                    <fieldset>                       
                     <legend>Dados do cadastro:</legend>
                         <label>Nome:</label><input type="text" name="Nome"><br><br>
                         <label>Idade:</label><input type="number" name="Idade"><br><br>
